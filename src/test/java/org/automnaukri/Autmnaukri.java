@@ -1,5 +1,7 @@
 package org.automnaukri;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -44,12 +46,24 @@ public class Autmnaukri {
 		Thread.sleep(7000);
 		driver.findElement(By.xpath("//div[@class='view-profile-wrapper']/a")).click();
 		
-		//Thread.sleep(8000);
-		//WebElement dr = driver.findElement(By.xpath("(//span[text()='editOneTheme'])[3]"));
+		Thread.sleep(8000);
+		WebElement dr = driver.findElement(By.xpath("(//span[text()='editOneTheme'])[3]"));
 		
-		//JavascriptExecutor j =(JavascriptExecutor)dr;
-		//j.executeScript("arguments[0].scrollIntoView();",j);
-		//dr.click();
+		
+		
+		dr.click();
+		
+
+		//List<WebElement> f = driver.findElements(By.xpath("//span[text()='editOneTheme'])[3]"));
+		
+		//JavascriptExecutor j =(JavascriptExecutor)f;
+		
+		//for (WebElement w: f) {
+		//	j.executeScript("arguments[0].scrollIntoView();",w);
+			//Thread.sleep(8000);
+			//w.click();
+	//	}
+		
 	
 	}
 	
